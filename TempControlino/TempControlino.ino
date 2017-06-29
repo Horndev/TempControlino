@@ -4,6 +4,7 @@
  Author:	Steven Horn
 */
 
+#include <Encoder.h>
 #include <U8glib.h>
 
 #include "TCSingleton.h"
