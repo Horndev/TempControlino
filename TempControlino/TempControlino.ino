@@ -4,6 +4,7 @@
  Author:	Steven Horn
 */
 
+#include <ArduinoSTL.h>
 #include <Encoder.h>
 #include <U8glib.h>
 

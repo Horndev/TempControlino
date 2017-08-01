@@ -24,9 +24,24 @@
     <ClInclude Include="TCSingleton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TCMenuItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Events.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EventClicked.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TCSingleton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TCMenuItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventClicked.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
