@@ -17,14 +17,14 @@ public:
 
 	int MenuPosition;	//This is the 0-indexed position of this item in the menu
 
+	void NotifyClicked();
+
 	virtual void attach(ClickObserver* observer)
 	{
 		_observers.push_back(observer);
 	}
 private:
 	bool isHighlighted;	//Is this menu item highlighted?
-
-	
 
 	TCSingleton*	tc;	//Points to the singleton object, which also contains the root menu which we navigate to on time-out.
 	//TCMenu* parent;		//Point to the parent menu

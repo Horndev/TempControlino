@@ -87,17 +87,25 @@
     <ClInclude Include="Config.h" />
     <ClInclude Include="EventButtonPressed.h" />
     <ClInclude Include="EventClicked.h" />
+    <ClInclude Include="EventRotateLeft.h" />
+    <ClInclude Include="EventRotateRight.h" />
     <ClInclude Include="Events.h" />
+    <ClInclude Include="TCDisplay.h" />
     <ClInclude Include="TCMenu.h" />
     <ClInclude Include="TCMenuItem.h" />
+    <ClInclude Include="TCRotaryEncoder.h" />
     <ClInclude Include="TCSingleton.h" />
     <ClInclude Include="__vm\.TempControlino.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EventButtonPressed.cpp" />
     <ClCompile Include="EventClicked.cpp" />
+    <ClCompile Include="EventRotateLeft.cpp" />
+    <ClCompile Include="EventRotateRight.cpp" />
+    <ClCompile Include="TCDisplay.cpp" />
     <ClCompile Include="TCMenu.cpp" />
     <ClCompile Include="TCMenuItem.cpp" />
+    <ClCompile Include="TCRotaryEncoder.cpp" />
     <ClCompile Include="TCSingleton.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -54,4 +54,11 @@ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\Tem
  C:\Users\pc1\Documents\Arduino\libraries\U8glib\src/clib/u8g.h \
  C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\TCSingleton.h \
  C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\Config.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\TCDisplay.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\TCMenu.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\TCMenuItem.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\Events.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\EventClicked.h \
+ C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/list \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\EventButtonPressed.h \
  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2017\Community\Common7\IDE\Extensions\pabjyzh5.4hi\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h

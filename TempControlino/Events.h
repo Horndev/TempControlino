@@ -8,7 +8,6 @@ class Observer
 public:
 	Observer(){}
 	virtual ~Observer(){}
-protected:
 	virtual void OnEvent(const Event &event) = 0;
 };
 

@@ -9,12 +9,18 @@
 #include <U8glib.h>
 
 #include "TCSingleton.h"
+#include "TCDisplay.h"
+#include "TCMenu.h"
 
 // This is the temperature controller singleton - all interfaces are handled here.
 TCSingleton tc;
 
-void setup() {
+TCDisplay* display;	// LED display
+TCMenu* menu;
 
+void setup() {
+	display = new TCDisplay(&tc);
+	menu = new TCMenu(&tc);
 }
 
 void loop() {
