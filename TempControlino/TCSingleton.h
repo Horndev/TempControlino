@@ -3,6 +3,8 @@
 #include <U8glib.h>
 #include <Encoder.h>
 
+#include "Config.h"
+
 class TCSingleton
 {
 public:
@@ -13,8 +15,8 @@ private:
 	U8GLIB* display;
 	Encoder* knob;
 
-	int pinA = 2;
-	int pinB = 3;   // Connected to DT on KY-040   //has interrupt capability
-	int pinC = 7;   // Connected to push button
+	int pinA = ENCODER_PINA;
+	int pinB = ENCODER_PINB;   // Connected to DT on KY-040   //has interrupt capability
+	int pinC = ENCODER_PIN_PUSHBUTTON;   // Connected to push button
 };
 

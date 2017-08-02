@@ -2,15 +2,16 @@
 
 #include "TCSingleton.h"
 #include "TCMenuItem.h"
+#include "Events.h"
+#include "EventButtonPressed.h"
 #include <list>
 
-class TCMenu
+class TCMenu :
+	public Observer <EventButtonPressed> // Listens for button being pressed
 {
 public:
 	TCMenu(TCSingleton* tc);
 	~TCMenu();
-
-	void update();
 	
 private:
 	TCSingleton* tc;	// Reference to the singleton class

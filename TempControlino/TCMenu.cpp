@@ -12,11 +12,6 @@ TCMenu::~TCMenu()
 {
 }
 
-void TCMenu::update()
-{
-
-}
-
 void TCMenu::draw()
 {
 }

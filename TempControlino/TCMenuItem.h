@@ -24,7 +24,7 @@ public:
 private:
 	bool isHighlighted;	//Is this menu item highlighted?
 
-	void*	OnPush;
+	
 
 	TCSingleton*	tc;	//Points to the singleton object, which also contains the root menu which we navigate to on time-out.
 	//TCMenu* parent;		//Point to the parent menu

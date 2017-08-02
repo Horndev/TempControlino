@@ -53,4 +53,5 @@ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\Tem
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Print.h \
  C:\Users\pc1\Documents\Arduino\libraries\U8glib\src/clib/u8g.h \
  C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\TCSingleton.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\Config.h \
  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2017\Community\Common7\IDE\Extensions\pabjyzh5.4hi\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h

@@ -1,5 +1,7 @@
 #pragma once
 
+// see http://rlc.vlinder.ca/blog/2010/08/event-handling-in-c-and-c/
+
 template < typename Event >
 class Observer
 {

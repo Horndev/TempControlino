@@ -20,7 +20,10 @@ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\TCM
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\eightanaloginputs/../standard/pins_arduino.h \
  C:\Users\pc1\Documents\Arduino\libraries\Encoder/utility/direct_pin_read.h \
  C:\Users\pc1\Documents\Arduino\libraries\Encoder/utility/interrupt_pins.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\Config.h \
  C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\TCMenuItem.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\Events.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\EventClicked.h \
  C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/list \
  C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/memory \
  C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/new \
@@ -36,4 +39,5 @@ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\TCM
  C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/iosfwd \
  C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/char_traits \
  C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/algorithm \
- C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/functional
+ C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/functional \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\EventButtonPressed.h
