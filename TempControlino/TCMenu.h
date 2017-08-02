@@ -5,10 +5,12 @@
 #include "Events.h"
 #include "EventButtonPressed.h"
 #include "EventClicked.h"
+#include "EventRotate.h"
 #include <list>
 
 class TCMenu
 	: public Observer <EventButtonPressed> // Listens for button being pressed
+	, public Observer <EventRotate>
 {
 public:
 	TCMenu(TCSingleton* tc);
@@ -17,6 +19,7 @@ public:
 private:
 	TCSingleton* tc;	// Reference to the singleton class
 	virtual void OnEvent(const EventButtonPressed &event);
+	virtual void OnEvent(const EventRotate &event);
 
 	void draw();
 

@@ -19,5 +19,5 @@ public:
 	Subject(){}
 	virtual ~Subject(){}
 	virtual void attach(ObserverType *observer) = 0;
-	virtual void detach(ObserverType *observer) = 0;
+	//virtual void detach(ObserverType *observer) = 0;
 };

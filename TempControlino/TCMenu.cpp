@@ -18,6 +18,10 @@ void TCMenu::OnEvent(const EventButtonPressed & event)
 	this->hoveredItem->NotifyClicked();
 }
 
+void TCMenu::OnEvent(const EventRotate & event)
+{
+}
+
 void TCMenu::draw()
 {
 }

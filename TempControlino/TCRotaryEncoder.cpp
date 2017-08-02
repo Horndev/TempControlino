@@ -2,8 +2,9 @@
 
 
 
-TCRotaryEncoder::TCRotaryEncoder()
+TCRotaryEncoder::TCRotaryEncoder(TCSingleton* tc)
 {
+	this->tc = tc;
 }
 
 

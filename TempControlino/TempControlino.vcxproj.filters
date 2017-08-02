@@ -48,10 +48,7 @@
     <ClInclude Include="TCRotaryEncoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="EventRotateLeft.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EventRotateRight.h">
+    <ClInclude Include="EventRotate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -77,10 +74,7 @@
     <ClCompile Include="TCRotaryEncoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="EventRotateLeft.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="EventRotateRight.cpp">
+    <ClCompile Include="EventRotate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -40,4 +40,5 @@ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\TCM
  C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/char_traits \
  C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/algorithm \
  C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/functional \
- C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\EventButtonPressed.h
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\EventButtonPressed.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\EventRotate.h

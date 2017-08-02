@@ -87,8 +87,7 @@
     <ClInclude Include="Config.h" />
     <ClInclude Include="EventButtonPressed.h" />
     <ClInclude Include="EventClicked.h" />
-    <ClInclude Include="EventRotateLeft.h" />
-    <ClInclude Include="EventRotateRight.h" />
+    <ClInclude Include="EventRotate.h" />
     <ClInclude Include="Events.h" />
     <ClInclude Include="TCDisplay.h" />
     <ClInclude Include="TCMenu.h" />
@@ -100,8 +99,7 @@
   <ItemGroup>
     <ClCompile Include="EventButtonPressed.cpp" />
     <ClCompile Include="EventClicked.cpp" />
-    <ClCompile Include="EventRotateLeft.cpp" />
-    <ClCompile Include="EventRotateRight.cpp" />
+    <ClCompile Include="EventRotate.cpp" />
     <ClCompile Include="TCDisplay.cpp" />
     <ClCompile Include="TCMenu.cpp" />
     <ClCompile Include="TCMenuItem.cpp" />
