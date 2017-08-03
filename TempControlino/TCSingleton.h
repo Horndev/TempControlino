@@ -11,7 +11,6 @@ public:
 	TCSingleton();
 	~TCSingleton();
 
-private:
 	U8GLIB* display;
 	Encoder* knob;
 

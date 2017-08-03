@@ -51,6 +51,21 @@
     <ClInclude Include="EventRotate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TCController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PinChangeInterrupt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PinChangeInterruptBoards.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PinChangeInterruptPins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PinChangeInterruptSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TCSingleton.cpp">
@@ -75,6 +90,24 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="EventRotate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TCController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PinChangeInterrupt0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PinChangeInterrupt1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PinChangeInterrupt2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PinChangeInterrupt3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PinChangeInterrupt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

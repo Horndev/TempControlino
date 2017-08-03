@@ -1,11 +1,15 @@
 #pragma once
 
+#include "PinChangeInterrupt.h"
 #include "TCSingleton.h"
 #include "Events.h"
 #include "EventButtonPressed.h"
 #include "EventRotate.h"
+#include "Config.h"
 
 #include <list>
+
+void handleButtonInterrupt(void);
 
 class TCRotaryEncoder
 	: public Subject<EventButtonPressed>
@@ -40,9 +44,18 @@ public:
 	{
 		_rotateObservers.push_back(observer);
 	}
+
+	void update(void)
+	{
+
+	}
+
+	long buttonPushedTime;
+	bool buttonPushed;
 private:
 	std::list<ButtonPressObserver*> _buttonPressObservers;
 	std::list<RotationObserver*>      _rotateObservers;
 	TCSingleton* tc;
+
 };
 

@@ -12,6 +12,11 @@ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\Tem
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\eightanaloginputs/pins_arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\eightanaloginputs/../standard/pins_arduino.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\PinChangeInterrupt.h \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\PinChangeInterruptSettings.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\PinChangeInterruptBoards.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\PinChangeInterruptPins.h \
  C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/ArduinoSTL.h \
  C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/serstream \
  C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/basic_definitions \
@@ -46,7 +51,6 @@ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\Tem
  C:\Users\pc1\Documents\Arduino\libraries\arduino_241265\src/string_iostream \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Stream.h \
  C:\Users\pc1\Documents\Arduino\libraries\Encoder/Encoder.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
  C:\Users\pc1\Documents\Arduino\libraries\Encoder/utility/direct_pin_read.h \
  C:\Users\pc1\Documents\Arduino\libraries\Encoder/utility/interrupt_pins.h \
  C:\Users\pc1\Documents\Arduino\libraries\U8glib\src/U8glib.h \

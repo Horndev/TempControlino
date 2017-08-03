@@ -10,6 +10,11 @@ class TCDisplay
 public:
 	TCDisplay(TCSingleton* tc);
 	~TCDisplay();
+
+	void update(void)
+	{
+
+	}
 private:
 	TCSingleton* tc;	// Reference to the singleton class
 };

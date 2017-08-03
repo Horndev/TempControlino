@@ -16,6 +16,8 @@ public:
 	TCMenu(TCSingleton* tc);
 	~TCMenu();
 	
+	void update(void)
+	{}
 private:
 	TCSingleton* tc;	// Reference to the singleton class
 	virtual void OnEvent(const EventButtonPressed &event);

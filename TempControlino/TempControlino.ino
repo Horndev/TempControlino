@@ -4,10 +4,12 @@
  Author:	Steven Horn
 */
 
+#include "PinChangeInterrupt.h""
 #include <ArduinoSTL.h>
 #include <Encoder.h>
 #include <U8glib.h>
 
+#include "Arduino.h"
 #include "TCSingleton.h"
 #include "TCDisplay.h"
 #include "TCMenu.h"
@@ -20,6 +22,12 @@ TCDisplay* display;	// LED display
 TCMenu* menu;
 TCRotaryEncoder* encoder;
 
+void handleButtonInterrupt(void)
+{
+	encoder->buttonPushed = true;
+	encoder->buttonPushedTime = millis();
+}
+
 void setup() {
 	display = new TCDisplay(&tc);
 	menu = new TCMenu(&tc);
@@ -31,5 +39,7 @@ void setup() {
 }
 
 void loop() {
-  
+	encoder->update();
+	menu->update();
+	display->update();
 }
