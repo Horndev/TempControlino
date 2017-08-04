@@ -10,7 +10,7 @@ TCRotaryEncoder::TCRotaryEncoder(TCSingleton* tc)
 	pinMode(tc->pinC, INPUT_PULLUP);
 
 	tc->knob->write(200);
-	//pinALast = digitalRead(pinA);  // Get initial state of rotary
+	pinALast = digitalRead(tc->pinA);  // Get initial state of rotary
 	attachPinChangeInterrupt(
 		digitalPinToPinChangeInterrupt(tc->pinC), 
 		::handleButtonInterrupt, RISING);

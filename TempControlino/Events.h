@@ -18,6 +18,6 @@ public:
 	typedef ObserverType_ ObserverType;
 	Subject(){}
 	virtual ~Subject(){}
-	virtual void attach(ObserverType *observer) = 0;
+	virtual void subscribe(ObserverType *observer) = 0;
 	//virtual void detach(ObserverType *observer) = 0;
 };

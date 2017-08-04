@@ -67,4 +67,6 @@ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\Tem
  C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\EventButtonPressed.h \
  C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\EventRotate.h \
  C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\TCRotaryEncoder.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\TCController.h \
+ C:\Users\pc1\AppData\Local\Temp\VMBuilds\TempControlino\nano_atmega328\Debug\TCMemory.h \
  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2017\Community\Common7\IDE\Extensions\pabjyzh5.4hi\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h

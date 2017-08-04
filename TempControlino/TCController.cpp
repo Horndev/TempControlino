@@ -2,8 +2,9 @@
 
 
 
-TCController::TCController()
+TCController::TCController(TCSingleton* tc)
 {
+	this->tc = tc;
 }
 
 

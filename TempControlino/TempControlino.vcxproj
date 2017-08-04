@@ -95,6 +95,7 @@
     <ClInclude Include="PinChangeInterruptSettings.h" />
     <ClInclude Include="TCController.h" />
     <ClInclude Include="TCDisplay.h" />
+    <ClInclude Include="TCMemory.h" />
     <ClInclude Include="TCMenu.h" />
     <ClInclude Include="TCMenuItem.h" />
     <ClInclude Include="TCRotaryEncoder.h" />
@@ -112,6 +113,7 @@
     <ClCompile Include="PinChangeInterrupt3.cpp" />
     <ClCompile Include="TCController.cpp" />
     <ClCompile Include="TCDisplay.cpp" />
+    <ClCompile Include="TCMemory.cpp" />
     <ClCompile Include="TCMenu.cpp" />
     <ClCompile Include="TCMenuItem.cpp" />
     <ClCompile Include="TCRotaryEncoder.cpp" />

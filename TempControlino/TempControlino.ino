@@ -14,13 +14,17 @@
 #include "TCDisplay.h"
 #include "TCMenu.h"
 #include "TCRotaryEncoder.h"
+#include "TCController.h"
+#include "TCMemory.h"
 
 // This is the temperature controller singleton - all interfaces are handled here.
 TCSingleton tc;
 
-TCDisplay* display;	// LED display
-TCMenu* menu;
-TCRotaryEncoder* encoder;
+TCDisplay* display;			// LED display
+TCMenu* menu;				// User interface
+TCRotaryEncoder* encoder;	// Rotary encoder
+TCController* controller;	// PID controller
+TCMemory memory;			// Used for non-volatile storage
 
 void handleButtonInterrupt(void)
 {
@@ -32,14 +36,16 @@ void setup() {
 	display = new TCDisplay(&tc);
 	menu = new TCMenu(&tc);
 	encoder = new TCRotaryEncoder(&tc);
+	controller = new TCController(&tc);
 
 	//notify the menu when the encoder changes
-	encoder->attach((TCRotaryEncoder::ButtonPressObserver*)menu);
-	encoder->attach((TCRotaryEncoder::RotationObserver*)menu);
+	encoder->subscribe((TCRotaryEncoder::ButtonPressObserver*)menu);
+	encoder->subscribe((TCRotaryEncoder::RotationObserver*)menu);
 }
 
 void loop() {
 	encoder->update();
 	menu->update();
 	display->update();
+	controller->update();
 }
