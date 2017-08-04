@@ -15,6 +15,7 @@ public:
 	{
 
 	}
+
 private:
 	TCSingleton* tc;	// Reference to the singleton class
 };

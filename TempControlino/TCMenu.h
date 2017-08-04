@@ -16,14 +16,18 @@ public:
 	TCMenu(TCSingleton* tc);
 	~TCMenu();
 	
-	void update(void)
-	{}
+	void update(void) {
+
+	}
+	
+	void draw();
 private:
 	TCSingleton* tc;	// Reference to the singleton class
 	virtual void OnEvent(const EventButtonPressed &event);
 	virtual void OnEvent(const EventRotate &event);
 
-	void draw();
+	TCMenu*	submenu;
+	TCMenu* rootmenu;
 
 	TCMenuItem* hoveredItem;	// This always points to the hovered menu item
 

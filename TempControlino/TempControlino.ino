@@ -13,6 +13,7 @@
 #include "TCSingleton.h"
 #include "TCDisplay.h"
 #include "TCMenu.h"
+#include "TCMenuItem.h"
 #include "TCRotaryEncoder.h"
 #include "TCController.h"
 #include "TCMemory.h"
@@ -34,13 +35,21 @@ void handleButtonInterrupt(void)
 
 void setup() {
 	display = new TCDisplay(&tc);
-	menu = new TCMenu(&tc);
 	encoder = new TCRotaryEncoder(&tc);
 	controller = new TCController(&tc);
+
+	menu = new TCMenu(&tc);	//this is the root menu
+	TCMenuItem* root_setpoint = new TCMenuItem(F("Set  :"));
+	TCMenuItem* root_currtemp = new TCMenuItem(F("Temp :"));
+	TCMenuItem* root_heating  = new TCMenuItem(F("Heat :"));
+
+	//encoder->subscribe((TCRotaryEncoder::RotationObserver*)root_setpoint);
 
 	//notify the menu when the encoder changes
 	encoder->subscribe((TCRotaryEncoder::ButtonPressObserver*)menu);
 	encoder->subscribe((TCRotaryEncoder::RotationObserver*)menu);
+
+
 }
 
 void loop() {
