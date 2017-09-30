@@ -20,6 +20,12 @@ public:
 
 	}
 	
+	// Adds the menuitem to the menu
+	void AddMenuItem(TCMenuItem* mi)
+	{
+		menuItems.push_back(mi);
+	}
+
 	void draw();
 private:
 	TCSingleton* tc;	// Reference to the singleton class

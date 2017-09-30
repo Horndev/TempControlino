@@ -37,4 +37,8 @@ void TCMenu::OnEvent(const EventRotate & event)
 
 void TCMenu::draw()
 {
+	if (this == tc->activeMenu)
+	{
+		// needs to be rendered
+	}
 }

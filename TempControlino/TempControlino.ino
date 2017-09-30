@@ -39,10 +39,16 @@ void setup() {
 	controller = new TCController(&tc);
 
 	menu = new TCMenu(&tc);	//this is the root menu
+	tc.rootMenu = menu;
+	tc.activeMenu = menu;
 	TCMenuItem* root_setpoint = new TCMenuItem(F("Set  :"));
 	TCMenuItem* root_currtemp = new TCMenuItem(F("Temp :"));
 	TCMenuItem* root_heating  = new TCMenuItem(F("Heat :"));
 
+	menu->AddMenuItem(root_setpoint);
+	menu->AddMenuItem(root_currtemp);
+	menu->AddMenuItem(root_heating);
+	
 	//encoder->subscribe((TCRotaryEncoder::RotationObserver*)root_setpoint);
 
 	//notify the menu when the encoder changes

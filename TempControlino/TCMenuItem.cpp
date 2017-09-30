@@ -6,6 +6,7 @@ TCMenuItem::TCMenuItem(String txt, String val)
 {
 	text = txt;
 	value = val;
+	hasSubmenu = false;
 }
 
 

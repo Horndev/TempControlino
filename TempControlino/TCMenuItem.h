@@ -55,10 +55,10 @@ public:
 	}
 
 private:
-	
-
 	bool isHighlighted;	//Is this menu item highlighted?
 	bool isActive;		//If this is a menu item with a value, this item is active and commands should update the value
+
+	bool hasSubmenu;
 
 	String text;	// Static text shown by menu item
 	String value;	// Optional - if the menu item should display a value of some kind.
@@ -66,7 +66,8 @@ private:
 	TCSingleton*	tc;	//Points to the singleton object, which also contains the root menu which we navigate to on time-out.
 	//TCMenu* parent;		//Point to the parent menu
 	//TCMenu* submenu;	//If not null, activating this item navigates to this menu
-	
+	void* submenu;
+
 	std::list<ClickObserver*> _observers;
 };
 
