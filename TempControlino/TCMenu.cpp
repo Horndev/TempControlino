@@ -20,6 +20,19 @@ void TCMenu::OnEvent(const EventButtonPressed & event)
 
 void TCMenu::OnEvent(const EventRotate & event)
 {
+	if (this->hoveredItem->IsActive())
+	{
+		// rotation should update hovered item value
+		//[TODO]
+		if (event.direction == 0)
+		{
+			this->hoveredItem->NotifyRotateLeft(1);
+		}
+		else
+		{
+			this->hoveredItem->NotifyRotateRight(1);
+		}
+	}
 }
 
 void TCMenu::draw()

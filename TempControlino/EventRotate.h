@@ -6,5 +6,6 @@ public:
 	~EventRotate();
 
 	int direction;
+	int v;
 };
 

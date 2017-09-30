@@ -65,6 +65,7 @@ public:
 		long newPosition = tc->knob->read();
 		if (newPosition != encoderPosCount) {
 			// Check for turning left or right
+			// [TODO] - include amount rotated
 			if (encoderPosCount > newPosition) {
 				NotifyRotated(0); // Left
 			}
