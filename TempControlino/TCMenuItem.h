@@ -54,6 +54,12 @@ public:
 		_observers.push_back(observer);
 	}
 
+	void SetSubMenu(void* menu)
+	{
+		submenu = menu;
+		hasSubmenu = true;
+	}
+
 private:
 	bool isHighlighted;	//Is this menu item highlighted?
 	bool isActive;		//If this is a menu item with a value, this item is active and commands should update the value
