@@ -32,14 +32,14 @@ public:
 			(*curr)->OnEvent(EventButtonPressed());
 		}
 	};
-	void NotifyRotated(int direction = 0)
+	void NotifyRotated(int direction = 0, long position = 0)
 	{
 		for (
 			std::list<RotationObserver*>::iterator curr(_rotateObservers.begin());
 			curr != _rotateObservers.end();
 			++curr)
 		{
-			(*curr)->OnEvent(EventRotate(direction));
+			(*curr)->OnEvent(EventRotate(direction, position));
 		}
 	};
 
@@ -72,11 +72,13 @@ public:
 			else {
 				NotifyRotated(1); // Right
 			}
+			encoderPosCountPrev = encoderPosCount;
 			encoderPosCount = newPosition;
 		}
 	}
 
 	long encoderPosCount = 0;	// Keeps track of how it is rotating
+	long encoderPosCountPrev = 0;
 	int pinALast;
 	long buttonPushedTime;	// Used to keep track of how long since the user pushed the button
 	bool buttonPushed;		// Used to connect the interrupt to this class

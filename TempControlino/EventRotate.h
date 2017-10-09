@@ -2,10 +2,10 @@
 class EventRotate
 {
 public:
-	EventRotate(int direction);
+	EventRotate(int direction, long position);
 	~EventRotate();
 
 	int direction;
-	int v;
+	long position;
 };
 

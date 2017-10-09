@@ -5,9 +5,9 @@
 */
 
 #include "PinChangeInterrupt.h""
-#include <ArduinoSTL.h>
-#include <Encoder.h>
-#include <U8glib.h>
+#include <ArduinoSTL.h>				// https://github.com/mike-matera/ArduinoSTL
+#include <Encoder.h>				// https://github.com/PaulStoffregen/Encoder
+#include <U8glib.h>					// https://github.com/olikraus/u8glib
 
 #include "Arduino.h"
 #include "TCSingleton.h"
@@ -21,18 +21,21 @@
 // This is the temperature controller singleton - all interfaces are handled here.
 TCSingleton tc;
 
+// Global objects for hardware components
 TCDisplay* display;			// LED display
 TCMenu* menu;				// User interface
 TCRotaryEncoder* encoder;	// Rotary encoder
 TCController* controller;	// PID controller
 TCMemory memory;			// Used for non-volatile storage
 
+// Callback function to handle rotary encoder push-button
 void handleButtonInterrupt(void)
 {
 	encoder->buttonPushed = true;
 	encoder->buttonPushedTime = millis();
 }
-// Menu
+
+// Menu layout
 // 1 - no input for 5 seconds = return to home
 // 2 ****** HOME
 // Set     : 50.0 *C
@@ -46,14 +49,14 @@ void handleButtonInterrupt(void)
 //   Exit Menu
 // 4 ****** HEATING MODE
 // -- HEATING --
-// > Continuous <
-//   Switching
-//   Settings
+// > Continuous <			  (this mode regulates output as an analog voltage controlling the MOSFET)
+//   Switching				  (this mode regulates output by turning current on/off)
+//   Settings				  (open the settings menu)
 //   Exit Menu
 // 5 ****** HEATING
 // -- HEAT SETTINGS --
 // > Max Output : 0.82        (user clicks, then rotation changes value 0 -- 1)
-//   Sw Window  : 2.00        (user clicks, then rotation changes value 0.1 -- 5.0)
+//   Sw Window  : 2.00        (user clicks, then rotation changes value 0.1 -- 5.0) *used for switching mode
 //   Exit Menu
 // 6 ******* PID Tune
 // -- PID TUNE --
@@ -62,16 +65,20 @@ void handleButtonInterrupt(void)
 //   Kd : 9
 //   Auto
 //   Exit Menu
-// 7 ******* Firmware
+// 7 ******* Firmware        * This just shows the user the version of firmware running
 // -- FIRMWARE --
 // Version 1.1
 // (C) Steven Horn
 // > Exit Menu
+
+
+// Device setup function runs on power-on
 void setup() {
 	display = new TCDisplay(&tc);
 	encoder = new TCRotaryEncoder(&tc);
 	controller = new TCController(&tc);
 
+	//** Create menu
 	menu = new TCMenu(&tc);	//this is the root menu
 	tc.rootMenu = menu;
 	tc.activeMenu = menu;
@@ -93,24 +100,31 @@ void setup() {
 	TCMenuItem* config_exit  = new TCMenuItem(F("Exit Menu"));
 
 	TCMenu* heatmenu = new TCMenu(&tc);
+	config_hmode->SetSubMenu(heatmenu);
 	TCMenuItem* heat_max  = new TCMenuItem(F("Max Output :"));
 	TCMenuItem* heat_sw   = new TCMenuItem(F("Sw Window  :"));
 	TCMenuItem* heat_exit = new TCMenuItem(F("Exit Menu"));
 
 	TCMenu* pidmenu = new TCMenu(&tc);
-
+	config_pid->SetSubMenu(pidmenu);
+	TCMenuItem* pid_kp   = new TCMenuItem(F("Kp  :"));
+	TCMenuItem* pid_ki   = new TCMenuItem(F("Ki  :"));
+	TCMenuItem* pid_kd   = new TCMenuItem(F("Kd  :"));
+	TCMenuItem* pid_exit = new TCMenuItem(F("Exit Menu"));
 
 	config_exit->SetSubMenu(menu);
 
+	//** Encoder settings
+
 	//encoder->subscribe((TCRotaryEncoder::RotationObserver*)root_setpoint);
 
-	//notify the menu when the encoder changes
+	// notify the menu when the encoder changes
 	encoder->subscribe((TCRotaryEncoder::ButtonPressObserver*)menu);
 	encoder->subscribe((TCRotaryEncoder::RotationObserver*)menu);
 
-
 }
 
+// This is the loop function which executes repeatedly while device is powered on
 void loop() {
 	encoder->update();
 	menu->update();
